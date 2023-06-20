@@ -710,3 +710,62 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+
+/* Popup */
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color:  #0062b9;
+  /* opacity: 0.8; */
+  width: 420px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  font-family: "Poppins",sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 10000; 
+}
+.popup button{
+  display: block;
+  margin:  0 0 15px auto;
+  background-color: transparent;
+  font-size: 20px;
+  color: #ffffff;
+  background: #03549a;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.popup h2{
+margin-top: -20px;
+color: #fff;
+}
+.popup p{
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* Apply the blur effect */
+  z-index: 9999;
+  display: none;
+}
+.popup__message{
+  font-size: medium;
+  font-family: "Poppins",sans-serif;
+  color: #fff;
+}
